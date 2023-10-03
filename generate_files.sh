@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Function to generate random string of a given length
+# Funkcija sugeneruoti atsitiktinį eilutės ilgio simbolių eilutę
 generate_random_string() {
     LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | head -c "$1"
 }
 
-# Function to create pairs and write to the file
+# Funkcija sukurti poras ir įrašyti į failą
 create_pairs() {
     local length="$1"
     local count="$2"
@@ -17,10 +17,10 @@ create_pairs() {
     done
 }
 
-# Create pairs for different lengths
+# Kurti poras skirtingiems ilgiams
 create_pairs 10 25000
 create_pairs 100 25000
 create_pairs 500 25000
 create_pairs 1000 25000
 
-echo "File created successfully: output.txt"
+echo "Failas sėkmingai sukurtas: output.txt"
