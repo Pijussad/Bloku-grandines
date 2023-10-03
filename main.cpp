@@ -70,24 +70,25 @@ vector<string> readInputData(int argc, char* argv[]) {
 
 
 int main(int argc, char* argv[]) {
+    // Nuskaityti įvesties duomenis iš argumentų
     vector<string> lines = readInputData(argc, argv);
     auto start_time = std::chrono::high_resolution_clock::now();
     ofstream outFile("hashes2.txt");
     for (const string& ivestis : lines) {
-        // Calculate hash using the current line (ivestis)
+        // Skaičiuoti maišos funkciją naudojant dabartinę eilutę (ivestis)
         vector<char> hash = customHash(ivestis);
 
-        // Display hash in hexadecimal format
+        // Rodyti maišą heksadecimale
         //cout << "Hash: ";
         for (char baitas : hash) {
             outFile << hex << setw(2) << setfill('0') << (int)(unsigned char)baitas;
         }
         outFile << dec << endl;
     }
-        auto end_time = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
-         // Display hashing time
-        cout << "Hashing time: " << duration.count() << " microseconds" << endl;
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+    // Rodyti hashavimo laiką
+    cout << "Hashavimo laikas: " << duration.count() << " mikrosekundės" << endl;
     return 0;
 }
 
