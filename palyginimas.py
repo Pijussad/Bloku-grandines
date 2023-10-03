@@ -3,7 +3,7 @@ def check_duplicate_hashes(file_path):
         with open(file_path, 'r') as file:
             lines = file.readlines()
 
-            # Ensure the number of lines is even (forming pairs)
+            # Uztikrinama, kad susidaro poros
             if len(lines) % 2 != 0:
                 print("Error: The number of lines in the file should be even.")
                 return
@@ -24,5 +24,4 @@ def check_duplicate_hashes(file_path):
     except FileNotFoundError:
         print(f"Error: File not found at {file_path}")
 
-# Replace 'hashes.txt' with the actual path to your file
 check_duplicate_hashes('hashes.txt')
