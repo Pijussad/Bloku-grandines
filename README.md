@@ -22,17 +22,17 @@ python3 palyginimas.py
 
 
 hashavimo funkcijos pseudokodas:
-1.   Nustatyti HASH_SIZE_BYTES = dydis rezultato vektoriaus
+1.   Nustatyti HASH_SIZE_BYTES = rezultato vektoriaus dydį
 2.   Sukurti vektorių hash dydžio HASH_SIZE_BYTES, inicializuotą nuliais
 3.   Kiekvienam simboliui simbolis įvesties eilutėje:
-4.     Nuolatui i nuo 0 iki HASH_SIZE_BYTES - 1:
-5.       Atnaujinti hash[i] pagal šiuos žingsnius:
-6.         hash[i] = (hash[i] + simbolis + (i % 13)) ^ ((hash[i] << (i % 8)) | (hash[i] >> (8 - (i % 8))))
-7.         hash[i] = (hash[i] + i) * 37
-8.        hash[i] = (hash[i] >> 4) | (hash[i] << 3)
-9.        hash[i] = hash[i] & ((i + 1) * 77)
-10.        hash[i] = hash[i] | ((i + 2) * 23)
-11.        hash[i] = (hash[i] + simbolis + (i % 7)) ^ ((hash[i] << 5) | (hash[i] >> 3))
-12.        hash[i] = hash[HASH_SIZE_BYTES-1-i]*15 + hash[i]
-13.        hash[i] = hash[HASH_SIZE_BYTES-i]*10 + hash[i]
+4.   Keičiamas i nuo 0 iki HASH_SIZE_BYTES - 1:
+5.   Atnaujinti hash[i] pagal šiuos žingsnius:
+6.    hash[i] = (hash[i] + simbolis + (i % 13)) ^ ((hash[i] << (i % 8)) | (hash[i] >> (8 - (i % 8))))
+7.    hash[i] = (hash[i] + i) * 37
+8.    hash[i] = (hash[i] >> 4) | (hash[i] << 3)
+9.    hash[i] = hash[i] & ((i + 1) * 77)
+10.   hash[i] = hash[i] | ((i + 2) * 23)
+11.   hash[i] = (hash[i] + simbolis + (i % 7)) ^ ((hash[i] << 5) | (hash[i] >> 3))
+12.   hash[i] = hash[HASH_SIZE_BYTES-1-i]*15 + hash[i]
+13.   hash[i] = hash[HASH_SIZE_BYTES-i]*10 + hash[i]
 14. Grąžinti rezultatų vektorių
