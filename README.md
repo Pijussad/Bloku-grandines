@@ -1,5 +1,5 @@
 # Bloku-grandines
-Antras variantas, jame yra main.cpp failas, taip pat pridėti testavimo įrankiai, sutaisytas generate_files2.sh failas ir pridėtas testavimas
+Antras variantas, jame yra main.cpp failas, taip pat pridėti testavimo įrankiai, sutaisytas generate_files2.sh failas bei pridėtas skirtingumą palyginantis failas
 
 Programos paleidimas:
 Sukompiliuokite programą, į terminalą įveskite:
@@ -19,6 +19,10 @@ chmod +x generate_files2.sh
 palyginimas.py paleidimas:
 Į terminalą įveskite:
 python3 palyginimas.py
+
+skirtingumas.py paleidimas:
+Į terminalą įveskite:
+python3 skirtingumas.py
 
 
 hashavimo funkcijos pseudokodas:
