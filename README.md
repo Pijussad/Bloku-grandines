@@ -29,7 +29,7 @@ hashavimo funkcijos pseudokodas:
 1.   Nustatyti HASH_SIZE_BYTES = rezultato vektoriaus dydį
 2.   Sukurti vektorių hash dydžio HASH_SIZE_BYTES, inicializuotą nuliais
 3.   Kiekvienam simboliui simbolis įvesties eilutėje:
-4.   For i from 0 to HASH_SIZE_BYTES - 1:
+4.   Keičiamas i nuo 0 iki HASH_SIZE_BYTES - 1:
 5.   Atnaujinti hash[i] pagal šiuos žingsnius:
 6.    hash[i] = (hash[i] + simbolis + (i % 13)) ^ ((hash[i] << (i % 8)) | (hash[i] >> (8 - (i % 8))))
 7.    hash[i] = (hash[i] + i) * 37
