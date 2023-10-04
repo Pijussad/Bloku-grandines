@@ -74,10 +74,10 @@ Tam, kad išmatuoti atsparumą kolizijai buvo sukurtas failas su 100000 skirting
 
 4. Hashų gautų iš dviejų to paties ilgio įvesčių, kurios skiriasi vienu simboliu skirtingumo palyginimas
 
-    Tam, kad palyginti skirtingumą buvo naudojamas Hamming algoritmas
+Tam, kad palyginti skirtingumą buvo naudojamas Hamming algoritmas
    Rezultatai tokie:
 Mažiausias skirtumas: 78.125%
 Didžiausias skirtumas: 100.0%
 Vidutinis skirtumas: 96.68284375%
-
+Vidutinis skirtingumas siekia beveik 97 procentus, todėl manau, kad darbas pavyko
 
