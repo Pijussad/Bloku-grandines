@@ -45,9 +45,10 @@ hashavimo funkcijos pseudokodas:
 Eksperimentinis tyrimas ir rezultatų analizė
 1.
 Hashuojant tokią pat raidę vieną didžiąją, kitą mažają rezultatai žymiai skiriasi:
-e - 39be2a3102aed3a9a2992cdfcc21abc7ca6335efa33ba9b9ff8e6483db286f64
+
+e - 39be2a3102aed3a9a2992cdfcc21abc7ca6335efa33ba9b9ff8e6483db286f64  dar kartą įvedant e rezultatas gaunamas toks pat.
+
 E - 5908bc5122c4f1c9d0bb0ee3ec67f9e7caa88bab3fea85df3bb200971b249748
-dar kartą įvedant e rezultatas gaunamas toks pat.
 
 Hashuojant 2 skirtingus 1000 simbolių failus rezultatai taip pat skirasi
 
@@ -60,4 +61,9 @@ Pirmas failas su viena raide pakeista - 0460969e69532621773e358cd258958188699f7b
 Tuščio failo hashuoti negalima, gaunamas pranešimas - Klaida: Tuščia įvestis.
 
 Išvada - nepriklausomai nuo Input'o, Output'ai visada yra vienodo dydžio, o to paties failo hash'as yra tas pats.
+
+2. Hashavimo funkcijos efektyvumo tyrimas:
+
+![Picture 1](https://github.com/Pijussad/Bloku-grandines/assets/64306577/7af2ce54-01bc-46ff-9d6f-f348596bc1cf)
+
 
