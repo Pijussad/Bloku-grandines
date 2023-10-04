@@ -63,7 +63,21 @@ Tuščio failo hashuoti negalima, gaunamas pranešimas - Klaida: Tuščia įvest
 Išvada - nepriklausomai nuo Input'o, Output'ai visada yra vienodo dydžio, o to paties failo hash'as yra tas pats.
 
 2. Hashavimo funkcijos efektyvumo tyrimas:
-
+Tyrimas buvo atliktas nadojant 10 simbolių ilgio eilutes.
 ![Picture 1](https://github.com/Pijussad/Bloku-grandines/assets/64306577/7af2ce54-01bc-46ff-9d6f-f348596bc1cf)
+
+Išvada - panašu, kad funkcijos efektyvumas yra linijinis, O(n), nors hashuojant labai mažai eilučių skirtumas yra minimalus
+
+3. Atsparumas kolizijai
+   
+Tam, kad išmatuoti atsparumą kolizijai buvo sukurtas failas su 100000 skirtingo ilgio eilučių poromis. Tada paleistas palyginimas.py failas, kuris nerado nei vienos poros kur hashas sutaptų.
+
+4. Hashų gautų iš dviejų to paties ilgio įvesčių, kurios skiriasi vienu simboliu skirtingumo palyginimas
+
+    Tam, kad palyginti skirtingumą buvo naudojamas Hamming algoritmas
+   Rezultatai tokie:
+Mažiausias skirtumas: 78.125%
+Didžiausias skirtumas: 100.0%
+Vidutinis skirtumas: 96.68284375%
 
 
