@@ -40,3 +40,22 @@ hashavimo funkcijos pseudokodas:
 12.   hash[i] = hash[HASH_SIZE_BYTES-1-i]*15 + hash[i]
 13.   hash[i] = hash[HASH_SIZE_BYTES-i]*10 + hash[i]
 14. Grąžinti rezultatų vektorių
+
+
+Eksperimentinis tyrimas ir rezultatų analizė
+1.
+Hashuojant tokią pat raidę vieną didžiąją, kitą mažają rezultatai žymiai skiriasi:
+
+e - 39be2a3102aed3a9a2992cdfcc21abc7ca6335efa33ba9b9ff8e6483db286f64
+
+E - 5908bc5122c4f1c9d0bb0ee3ec67f9e7caa88bab3fea85df3bb200971b249748
+
+Hashuojant 2 skirtingus 1000 simbolių failus rezultatai taip pat skirasi
+
+Pirmas failas - 8ea4c7741dee21412f1a2a896aa29e5b0a765e47d021e8421dac4aece80b1267
+
+Antras failas - 0e2f99c39a5ee9f765c676e62be3dac8c7257409b8e4dbef78db8f42505a5a3e
+
+Pirmas failas su viena raide pakeista - 0460969e69532621773e358cd258958188699f7b0e2575e25e27622659d42ca9
+
+
