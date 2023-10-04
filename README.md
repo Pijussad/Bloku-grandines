@@ -79,5 +79,5 @@ Tam, kad palyginti skirtingumą buvo naudojamas Hamming algoritmas
 Mažiausias skirtumas: 78.125%
 Didžiausias skirtumas: 100.0%
 Vidutinis skirtumas: 96.68284375%
-Vidutinis skirtingumas siekia beveik 97 procentus, todėl manau, kad darbas pavyko
 
+Vidutinis skirtingumas siekia beveik 97 procentus, todėl manau, kad darbas pavyko
